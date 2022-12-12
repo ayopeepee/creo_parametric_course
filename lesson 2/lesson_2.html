@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson_2_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/37dea81f2e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/index.html"><img src="/images/PTC_Creo_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/index.html#lessons">Разделы</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="steps">
+        <div class="text-box">
+            <div class="first_part">
+                <h2>3. Плоскости</h2>
+                <p>Итак, перед нами 3 плоскости: <strong>RIGHT</strong> (вид справа), <strong>TOP</strong> (вид сверху), <strong>FRONT</strong> (вид спереди).</p>
+                <img src="/images/2nd_lesson/planes.png" class="planes">
+                <p>При разработке модели важно правильно выбрать главный вид (вид спереди). <br>
+                Он должен наиболее полно отражать структуру модели. <br>
+                Давайте спроецируем вид сверху (создадим <strong>эскиз</strong> плоскости TOP), 
+                выбрав плоскость непосредственно из 3D представления,<br> либо в дереве модели,
+                и пременим команду <strong>эскиз</strong>.</p>
+                <img src="/images/2nd_lesson/panel.png" class="panel">
+                <p>Выполним переориентацию, используя команду <strong>Вид эскиза</strong> в появившейся панели. </p>
+                </div>   
+            </div>
+        <div class="text-box">
+            <div class="second_part">
+                <h2>4. Эскизы</h2>
+                <p>Таким образом мы перешли к 2D представлению нашей модели сверху.</p>
+                <div class="img-wrapper">
+                    <img src="/images/2nd_lesson/sketch.png" class="sketch">
+                </div>
+                <p>У нас изменилась <strong>панель инструментов</strong>, которая теперь соответствует режиму эскиз.
+                <br> Как Вы могли заметить от изменения режима работы с моделью, изменяется и функционал применимый к ней.</p>
+                <img src="/images/2nd_lesson/circle.png" class="circle">
+                <p>Создадим окружность с центром в начале координат и установим диаметр ⌀400 и нажмем <strong>OK</strong>.
+                    <br><br> На этом все. В следующий раз придадим объем нашей окружности.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="steps_nav">
+        <div class="next_prev">
+            <ul>
+                <li class="prev"><a href="/lesson 1/lesson_1.html">Назад</a></li>
+                <li class="next"><a href="/lesson 3/lesson_3.html">Далее</a></li>    
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+        
+        </body>
+        </html>

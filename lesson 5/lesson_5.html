@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson_5_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/37dea81f2e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/index.html"><img src="/images/PTC_Creo_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/index.html#lessons">Разделы</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="steps">
+        <div class="text-box">
+            <div class="first_part">
+                <h2>8. Подготовка компонентов сборки</h2>
+                <p>Следующие 2 урока буду посвящены сборке неподвижного соединения. <br>
+                Перед началом проектирования деталей необходимо определить единицы измерения (не забывайте применить это к каждой детали):
+                <br> <strong>Файл -> Подготовить -> Свойства модели -> Единица измерения -> Миллиметр Килограмм Сек -> Задать</strong></p>
+                <p>Первая деталь получается путем вращения данного эскиза:</p>
+                <img src="/images/5th_lesson/first_detail.png" class="first_detail">
+                <p>Помимо этого необходимо создать массив, указав тип ось, из отверстий:</p>
+                <img src="/images/5th_lesson/first_detail_part_2.png" class="first_detail_part_2">
+                <p>Вытянем на 8мм эскиз для получания второй детали:</p>
+                <img src="/images/5th_lesson/second_detail.png" class="second_detail">
+                <p>Для третьей детали вращаем эскиз с последующим добавлением скругления радиусом 0.5мм на внешней кромке узкой части:</p>
+                <img src="/images/5th_lesson/third_detail.png" class="third_detail">
+                <p>Четвертой деталью будет болт с радиусом стрежня 8мм и высотой 50мм.
+                    <br> Головку болта построим с помощью интрумента Палитра и выбора 6-ти стороннего шестиугольника,
+                    <br> установив размер под ключ 13мм. Высота вытягивания головки болта 5.3мм. Зададим резьбу нашему болту, а именно
+                    <br> стандартную М8х1.25 на глубину 22мм. 
+                </p>
+                <img src="/images/5th_lesson/fourth_detail.png" class="fourth_detail">
+                 <p>Пятая деталь - гайка. С размером под ключ 13мм, высотой вытягивания 6.8мм
+                    <br> и стандартным отверстием М8х1.25 с зенковкой 8.20мм.</p>
+                <img src="/images/5th_lesson/fifth_detail.png" class="fifth_detail">
+                <p>Наконец шестая детать. Вытянем эскиз на 1.6мм:</p>
+                    <img src="/images/5th_lesson/sixth_detail.png" class="sixth_detail">
+                <p><br> <br> На этом все. В следующий раз соберем все компоненты воедино.
+                </p>
+                </div>   
+            </div>
+        
+    </section>
+    <section class="steps_nav">
+        <div class="next_prev">
+            <ul>
+                <li class="prev"><a href="/lesson 4/lesson_4.html">Назад</a></li>
+                <li class="next"><a href="/lesson 6/lesson_6.html">Далее</a></li>    
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+        
+        </body>
+        </html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lesson_6_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/37dea81f2e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/index.html"><img src="/images/PTC_Creo_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/index.html#lessons">Разделы</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="steps">
+        <div class="text-box">
+            <div class="first_part">
+                <h2>9. Сборка компонентов</h2>
+                <p>Перейдем к сборке неподвижного соединения. 
+                    <br>Для этого создадим файл сборки. Добавим нашу первую деталь, указав привязку по умолчанию.
+                    <br>Цвет детали указывает на степень фиксации. В нашем случае необходимо добиться того,
+                    <br>чтобы в все детали имели твердую фиксацию (серый цвет).
+                    <br>Добавим вторую деталь и выполним ее фиксацию с помощью двух привязок:
+                    <br>параллельной для осей и совпадения для поверхностей:
+                </p>
+
+                <img src="/images/6th_lesson/first_and_second_details.png" class="two_details">
+                <p>Снова добавим первую деталь и расположим ее зеркально по отношению к предыдущей.
+                    <br>В сечении получим:</p>
+                <img src="/images/6th_lesson/cut.png" class="cut">
+                <p>Добавим третью деталь и создадим массив:</p>
+                <img src="/images/6th_lesson/third_detail.png" class="third_detail">
+                <p>Шестая деталь располагается поверх третьей: </p>
+                <img src="/images/6th_lesson/sixth_detail.png" class="sixth_detail">
+                <p>Добавим четвертую деталь:</p>
+                <img src="/images/6th_lesson/fourth_detail.png" class="fourth_detail">
+                <p>Заключительная часть - добавление пятой детали:</p>
+                <img src="/images/6th_lesson/fifth_detail.png" class="fifth_detail">
+                <p><br> <br> На этом курс закончен. Теперь Вы можете
+                </p>
+                <div class="d-flex row">
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Получить сертификат
+                          </button>
+                    </div>
+                </div>
+                </div>   
+            </div>
+        
+    </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Введите данные</h5>
+              <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Имя</label>
+                      <input class="form-control" id="exampleInputName1" placeholder="Имя">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputSurname1">Фамилия</label>
+                      <input class="form-control" id="exampleInputSurname1" placeholder="Фамилия">
+                    </div>
+                    
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <a href="/certificate/index.html" type="button" class="btn btn-primary" onclick="getName()">Сохранить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <section class="steps_nav">
+        <div class="next_prev">
+            <ul>
+                <li class="prev"><a href="/lesson 5/lesson_5.html">Назад</a></li>
+                <li class="next"><a href="/index.html">На главную</a></li>    
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function getName(){
+            let newName = document.getElementById("exampleInputName1").value;
+            let newSurname = document.getElementById("exampleInputSurname1").value;
+            let date = new Date();
+            let output = String(date.getDate()).padStart(2, '0') + '.' + String(date.getMonth() + 1).padStart(2, '0') + '.' + date.getFullYear();
+            window.sessionStorage.setItem("newN", newName + " " + newSurname);
+            window.sessionStorage.setItem("CurDate", output);
+        }
+        
+    </script>
+        
+        </body>
+        </html>

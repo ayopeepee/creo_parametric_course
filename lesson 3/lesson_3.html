@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson_3_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/37dea81f2e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/index.html"><img src="/images/PTC_Creo_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/index.html#lessons">Разделы</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="steps">
+        <div class="text-box">
+            <div class="first_part">
+                <h2>5. Вытягивание</h2>
+                <p>Мы с Вами уже имеем эскиз окружности. <br>
+                Давайте теперь превратим его в цилиндр. Выберем нашу окружность и выполним команду <strong>Вытянуть</strong>.</p>
+                <img src="/images/3rd_lesson/cylinder.png" class="cylinder">
+                <p>Здесь можно выбирать глубину и направление нашего вытягивания, <br>
+                изменить направление вытягивания и выбрать тип (твердое тело, поверхность). <br></p>
+                </div>   
+            </div>
+        <div class="text-box">
+            <div class="second_part">
+                <h2>6. Вращение</h2>
+                <p>Удалим наш цилиндр и его эскиз. Перейдем к эскизу фронтальной плоскости и построим эскиз, показанный на изображении,
+                    <br> не забыв добавить вертикальную ось, проходящую через начало координат.</p>
+                <img src="/images/3rd_lesson/kone_sketch.png" class="kone_sketch">
+                <p>Выполним операцию <strong>Вращать</strong>.</p>
+                <img src="/images/3rd_lesson/kone.png" class="kone">
+                <p>Таким образом получим конус.
+                    <br><br> На этом все. В следующий раз спроектируем более сложную модель.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="steps_nav">
+        <div class="next_prev">
+            <ul>
+                <li class="prev"><a href="/lesson 2/lesson_2.html">Назад</a></li>
+                <li class="next"><a href="/lesson 4/lesson_4.html">Далее</a></li>    
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+        
+        </body>
+        </html>

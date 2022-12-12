@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="lesson_1_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/37dea81f2e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/index.html"><img src="/images/PTC_Creo_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="/index.html#lessons">Разделы</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="steps">
+        <div class="text-box">
+            <div class="first_part">
+                <h2>1. Создание проекта</h2>
+                <p>Для начала создадим проект с параметрами, показанными на изображении.</p>
+                <img src="/images/1st_lesson/creating a project.png" class="creating">
+                <p>Здесь Вы можете наблюдать <strong>3 плоскости</strong> нашей будущей модели. <br>
+                Не будем томить, и сразу добавим куб для большей наглядности. <br>
+                Сделать это можно следуя этой инструкции:<br>
+                <strong>"Модель" -> "Поверхности" -> "Свободный стиль" -> "Формы" -> "Куб" -> "ОК"</strong> </p>
+                <img src="/images/1st_lesson/cube.png" class="cube">
+                <p><br>С помощью нажатия и удержания колесика мыши можно <strong>покрутить</strong> модель, <br>
+                а если покрутить колесико мыши, то можно <strong>приближать и отдалять</strong> модель. <br>
+                Нажатием клавиши shift и удержанием колеса мыши изменяется <strong>положение</strong> модели.</p>
+                </div>   
+            </div>
+        <div class="text-box">
+            <div class="second_part">
+                <h2>2. Элементы управления</h2>
+                <p>Пройдемся по интерфейсу программы.</p>
+                <div class="img-wrapper">
+                    <img src="/images/1st_lesson/bar.png" class="bar">
+                </div>
+                <p>Над моделью мы видим <strong>панель инструментов</strong>, с помощью которой и будут создаваться модели,
+                    <br>но об этом чуть позже.
+                </p>
+                <img src="/images/1st_lesson/tree.png" class="tree">
+                <p>Слева находится <strong>дерево модели</strong>, в котором отображаются все наши действия над моделью.
+                    <br> Удалим наш кубик, кликнув по нему в дереве и нажав соответствующее действие.
+                    <br> <br>На этом все. В следующий раз поработаем с плоскостями и эскизами.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    </section>
+    <section class="steps_nav">
+        <div class="next_prev">
+            <ul>
+                <li class="prev"><a href="/index.html">Назад</a></li>
+                <li class="next"><a href="/lesson 2/lesson_2.html">Далее</a></li>    
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+        
+        </body>
+        </html>
