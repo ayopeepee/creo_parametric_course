@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/37dea81f2e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/PTC_Creo_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#lessons">Разделы</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="wrapper">
+            <div class="text-box">
+                <h1>Creo Parametric</h1>
+                <p>Масштабируемый, функционально
+                    совместимый пакет программного обеспечения
+                     для конструирования изделий <br>
+                     Стандарт среди систем 3D CAD</p>
+                <a href="#lessons" class="hero-btn">Начать изучение</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="course">
+        <a  name="lessons"><h1>Уроки</h1></a>
+            <div class="row">
+                    <div class="course-col">
+                        <div class="text">
+                            <a href="lesson 1/lesson_1.html">
+                                <h3>Урок 1</h3>
+                                <p>Первые шаги</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-col">
+                        <a href="/lesson 2/lesson_2.html">
+                            <h3>Урок 2</h3>
+                            <p>Плоскости и эскизы</p>
+                        </a> 
+                    </div>
+                    <div class="course-col">
+                        <a href="/lesson 3/lesson_3.html">
+                            <h3>Урок 3</h3>
+                            <p>Объемы</p>
+                        </a>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="course-col">
+                    <a href="/lesson 4/lesson_4.html">
+                        <h3>Урок 4</h3>
+                        <p>Модель кружки</p>
+                    </a>
+                </div>
+                <div class="course-col">
+                    <a href="/lesson 5/lesson_5.html">
+                        <h3>Урок 5</h3>
+                        <p>Компоненты сборки</p>
+                    </a>
+                </div>
+                <div class="course-col">
+                    <a href="/lesson 6/lesson_6.html">
+                        <h3>Урок 6</h3>
+                        <p>Сборка</p>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+           <a href=""><i class="fa-brands fa-vk"></i></a>
+        </div>
+        <p>Made by Danil Mironov IU3-33B</p>
+    </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
